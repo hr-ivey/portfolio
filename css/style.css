@@ -4,7 +4,15 @@ h1 {
     text-align: center;
     font-weight: 700;
     padding: 2em 0em 1em 0em;
+    margin: 0;
 }
+
+h1::before {
+    content: "#";
+    color:#e08032;
+    font-size:1.5em;
+    font-weight: 900;
+  }
 
 h2 {
     color: #fffee1;
@@ -23,53 +31,67 @@ p {
 b {
     color: #e08032;
 }
-
 a {
+    color: #fffee1;
+    text-transform: uppercase;
     text-decoration: none;
-}
+    letter-spacing: 0.15em;
+    padding: 10px 0px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
 
 body {
     background-color: #131313;
     color: #9ab58f;
     font-family: 'Quicksand', sans-serif;
     margin: auto;
+    background-image: url("/images/moon.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #about-me {
-    background-color: #223927;
     padding: 0em 3em 3em 3em;
     border-radius: 3em;
     text-align: justify;
 }
 
-#my-work {
-    background-color: #131313;
-    padding: 0em 3em 3em 3em;
-    border-radius: 0em;
-}
-
 #contact-me {
     background-color: #223927;
     padding: 0em 3em 3em 3em;
-    border-radius: 3em;
+    border-radius: 0em 0em 3em 3em;
 }
 
 #content {
-    background-color: #121e15;
-    padding: 5em 0em 3em 0em;
+    background-color: #223927;
+    padding: 0em 0em 3em 0em;
 }
 
 .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
-    padding: 1em 0em 1em 0em;
-    margin-bottom: 15em;
+    margin-bottom: 7em;
 }
 
 .nav li {
     list-style: none;
-    padding: .5em;
     margin: .5em 2em;
     border-bottom: .2em;
     font-size: 2em;
@@ -79,63 +101,9 @@ body {
     color: #e08032;
 }
 
-.tree-line {
-    width: 100%;
-    margin-bottom: -7em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.logo {
-    margin: auto;
-    width: 200px;
-}
-
-.photo {
-    float: left;
-    width: 220px;
-    margin: 0em 4em;
-    border-color: #131313;
-    border-style: solid;
-    border-width: 1em;
-}
-
-.project-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.col {
-    margin: auto;
-}
-
-/* Ensures the project name is not affected by project-preview opacity. */
-.project-name {
-    font-size: 1.5em;
-    font-weight: 300;
-    position: absolute;
-    margin: 5em 1em 0em 1em;
-    padding: .5em;
-    background-color:  #223927;
-    z-index: 1;
-}
-
-/* Changes opacity of image so that it appears faded. */
-.project-preview {
-    margin: .5em 0em 0em 0em;
-    border: 1em;
-    border-style: solid;
-    border-color: #223927;
-    /* opacity: .5; */
-}
-
 .intro-text {
-    text-align: center;
     font-size: 2.5em;
     font-weight: 300;
-    margin: 3em 0em;
 }
 
 .styled-text {
@@ -144,18 +112,37 @@ body {
     font-size: 5em;
 }
 
-/* Changes opacity of image when . */
-.project-preview:hover {
-    opacity: 1;
-    transition-duration: 1s;
+.tree-line {
+    width: 100%;
+    display: block;
+    position: relative;
 }
 
+.photo {
+    float: left;
+    width: 220px;
+    margin: 0em 4em 1em 0em;
+    border-color: #131313;
+    border-style: solid;
+    border-width: 1em;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #131313;
+    padding-bottom: 7em;
+    border-radius: 7em;
+}
+
+.col {
+    margin: auto;
+}
 .contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
 .contact li {
     margin: auto;
     list-style: none;
@@ -166,47 +153,193 @@ body {
     color: #e08032;
 }
 
+/* Animated symbol settings. */
+.floaters{
+    width: -moz-available;
+    height: 100px;
+    overflow: hidden;
+    color: #fffee1;
+}
+.floaters li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    animation: animate 25s linear infinite;
+    bottom: 300px;
+}
+.floaters li:nth-child(1){
+    left: 25%;
+    animation-delay: 0s;
+}
+.floaters li:nth-child(2){
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.floaters li:nth-child(3){
+    left: 70%;
+    animation-delay: 4s;
+}
+.floaters li:nth-child(4){
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.floaters li:nth-child(5){
+    left: 65%;
+    animation-delay: 0s;
+}
+.floaters li:nth-child(6){
+    left: 75%;
+    animation-delay: 3s;
+}
+.floaters li:nth-child(7){
+    left: 35%;
+    animation-delay: 7s;
+}
+.floaters li:nth-child(8){
+    left: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.floaters li:nth-child(9){
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.floaters li:nth-child(10){
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: .2;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+
+/* "My Work" gallery settings */
+.row {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
+}
+.row img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.gallery ul li {
+    float: left;
+    margin: 1em;
+    overflow: hidden;
+}
+.gallery {
+    padding: 40px 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+.gallery ul {
+    padding-top: 50px;
+    position: relative;
+}
+.gallery ul li {
+    margin-bottom: 20px;
+    width: 23.24561403508772%;
+    position: relative;
+}
+.port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    background-color: #121e15;
+    z-index: 103;
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+     -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.port img {
+    width: 20%;
+    float: right;
+    padding: 0 3em;
+}
+.port .description {
+    float: left;
+    width: 60%;
+    max-height: 100%;
+    padding: 0 3em;
+    overflow: auto;
+}
+.port > * {
+    opacity: 0;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.port.item_open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.port > * {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+.close {
+    width: 50px;
+    height: 50px;
+    background: url(/images/times-light.png) no-repeat;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    z-index: 1004;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.item_open .close {
+    top: -2em;
+    right: 3em;
+}
+
+/* Mobile-friendly layout changes */
 @media (max-width: 1024px) {
-    header h1 {
-        padding: .5em 0em;
-        text-align: center;
-        width: 100%;
+    h2 {
+        font-size: 2em;
     }
     .nav {
-        width:100%;
+        justify-content: center;
+        padding: 0;
     }
     .nav li {
-        width:100%;
-        text-align: center;
+        margin: .5em 1em;
     }
-    .hero {
-        display: none;
-    }   
     .container {
         display: flex;
         flex-wrap: wrap;
-    }
-    .section-header {
-        width: 100%;
-        text-align: center;
-        padding-bottom: .1em;
-        border-bottom: .1em;
-        border-bottom-style: solid;
-    }
-    .section-content {
-        width: 100%;
-        border: none;
-    }
-    .about-photo {
-        width: 100%;
-        margin-bottom: 2em;
-        border: none;
     }
     .project-name {
         font-size: 1em;
         margin: 1.5em auto;
     }
-
     .project-preview {
         width: 100%;
         margin: .5em auto;
@@ -215,3 +348,19 @@ body {
     .project:first-of-type img {
         width:100%;
     }
+    .contact {
+        justify-content: center;
+        padding: 0;
+    }
+    .contact li {
+    margin: 1em;
+    }
+@media (max-width: 550px) {
+    .photo {
+        width: -moz-available;
+        margin: 2em 0em;
+    }
+     .port img {
+        width: 100%;
+    }
+}

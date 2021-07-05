@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/c8254ad679.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,9 +25,22 @@
     </ul>
 </header>
 
-<center><span class="styled-text">Howdy, </span> <span class="intro-text">I’m <b>Ren</b>, a web developer and digital artist.</span></center>
+    <ul class="floaters">
+        <li><i class="fal fa-code fa-2x"></i></li>
+        <li><i class="fad fa-deer fa-5x"></i></li>
+        <li><i class="fal fa-code fa-5x"></i></li>
+        <li><i class="fal fa-code fa-3x"></i></li>
+        <li><i class="fal fa-code fa-7x"></i></li>
+        <li><i class="fal fa-code fa-5x"></i></li>
+        <li><i class="fal fa-code fa-3x"></i></li>
+        <li><i class="fal fa-code fa-2x"></i></li>
+        <li><i class="fal fa-code fa-3x"></i></li>
+        <li><i class="fal fa-code fa-8x"></i></li>
+</ul>
 
-<img src=".\images/twee.png" class="tree-line">
+<div class="animate__animated animate__fadeIn animate__slower"><center><span class="styled-text">Howdy, </span> <span class="intro-text">I’m <b>Ren</b>, a web developer and digital artist.</span></center></div>
+</div>
+<img src=".\images/twee.png" class="tree-line"></div>
 
 <div id="content">
 <section id="about-me">
@@ -38,62 +53,66 @@
     <p>When I'm not neck-deep in code, I like to go running, hiking, watch documentaries, and play video games.</p>
 </section>
 
-
-<section id="my-work">
     <h1>MY-WORK</h1>
-    <div class="project-container">
-        <div class="col">
-            <h2>Web Development</h2>
-                <div class="project">
-                    <h3 class="project-name">Web Design</h3>
-                    <a href="#"><img src=".\images\webdesign.png" class="project-preview"></a>
+    <section class="gallery">
+        <div class="row">
+            <ul>
+                <a href="#" class="close"></a>
+                <li>
+                    <a class="image" href="#item01">
+                        <img src="https://cdn.dribbble.com/users/545884/screenshots/4356121/darko--dr.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="image" href="#item01">
+                        <img src="https://cdn.dribbble.com/users/545884/screenshots/3695553/news.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="image" href="#item01">
+                        <img src="https://cdn.dribbble.com/users/545884/screenshots/4360101/liberosis_--_12.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="image" href="#item01">
+                        <img src="https://cdn.dribbble.com/users/545884/screenshots/3148799/technical-book.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div> 
+
+<!-- / row -->
+    
+ <!-- Item 01 -->
+        <div id="item01" class="port">
+        
+            <div class="row">
+                <div class="description">
+                    <h2>Item 01</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
                 </div>
-                <div class="project">
-                    <h3 class="project-name">Graphic Design</h3>
-                    <a href="#"><img src=".\images\graphicdesign.png" class="project-preview"></a>
+    
+                    <img src=".\images/characterdesign.png" alt="">
                 </div>
-                <div class="project">
-                    <h3 class="project-name">Illustration</h3>
-                    <a href="#"><img src=".\images\illustration.png" class="project-preview"></a>
-                </div>
-                <div class="project">
-                    <h3 class="project-name">Character Design</h3>
-                    <a href="#"><img src=".\images\characterdesign.png" class="project-preview"></a>
-                </div>
+            </div> <!-- / row -->
         </div>
-        <div class="col">
-            <h2>Digital Art</h2>
-                <div class="project">
-                    <h3 class="project-name">Web Design</h3>
-                    <a href="#"><img src=".\images\webdesign.png" class="project-preview"></a>
-                </div>
-                <div class="project">
-                    <h3 class="project-name">Graphic Design</h3>
-                    <a href="#"><img src=".\images\graphicdesign.png" class="project-preview"></a>
-                </div>
-                <div class="project">
-                    <h3 class="project-name">Illustration</h3>
-                    <a href="#"><img src=".\images\illustration.png" class="project-preview"></a>
-                </div>
-                <div class="project">
-                    <h3 class="project-name">Character Design</h3>
-                    <a href="#"><img src=".\images\characterdesign.png" class="project-preview"></a>
-                </div>
-        </div>
-    </div>
-</section>
+    
+    
+    </section> <!-- / projects -->
 
 
 <footer>
 <section id="contact-me">
     <h1>CONTACT-ME</h1>
     <ul class="contact">
-        <li>470.201.0206</li>
-        <li><a href="mailto:haleyrivey@gmail.com" target="_blank">haleyrivey@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/haleyrivey "target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/hr-ivey/" target="_blank">GitHub</a></li>
+        <li><a href="mailto:haleyrivey@gmail.com" target="_blank"><i class="fad fa-envelope-square fa-3x"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/haleyrivey "target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
+        <li><a href="https://github.com/hr-ivey/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
     </ul></section>
 </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src=".\script.js"></script>
 </body>
 </html>
