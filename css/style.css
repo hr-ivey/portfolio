@@ -1,68 +1,45 @@
+h1 {
+    color: #fffee1;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 700;
+    padding: 2em 0em 1em 0em;
+}
+
+h2 {
+    color: #fffee1;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 700;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+b {
+    color: #e08032;
+}
 
 a {
     text-decoration: none;
-}
-
-h1 {
-    color: #fffee1;
-    text-align: center;
-    font-weight: 700;
-    padding: 2em 0em 0em 0em;
 }
 
 body {
     background-color: #131313;
     color: #9ab58f;
     font-family: 'Quicksand', sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 2em;
     margin: auto;
-}
-
-.nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    padding: 1em 0em 1em 0em;
-}
-
-.nav li {
-    list-style: none;
-    padding: .5em;
-    margin: .5em 2em;
-    border-bottom: .2em;
-}
-
-.nav li a {
-    color: #e08032;
-}
-
-
-#intro-text {
-    text-align: center;
-    font-size: 2em;
-    font-weight: 300;
-    margin: 3em 0em;
-}
-
-#content {
-    background-color: #121e15;
-    padding: 3em 0em 3em 0em;
-}
-
-.tree-line {
-    width: 100%;
-    margin-bottom: -4.5em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #about-me {
     background-color: #223927;
     padding: 0em 3em 3em 3em;
     border-radius: 3em;
+    text-align: justify;
 }
 
 #my-work {
@@ -77,15 +54,39 @@ body {
     border-radius: 3em;
 }
 
-.howdy {
-    font-family: 'Akaya Kanadaka', cursive;
-    color: #fffee1;
-    font-size: 2.5em;
+#content {
+    background-color: #121e15;
+    padding: 5em 0em 3em 0em;
 }
 
-.em {
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 1em 0em 1em 0em;
+    margin-bottom: 15em;
+}
+
+.nav li {
+    list-style: none;
+    padding: .5em;
+    margin: .5em 2em;
+    border-bottom: .2em;
+    font-size: 2em;
+}
+
+.nav li a {
     color: #e08032;
 }
+
+.tree-line {
+    width: 100%;
+    margin-bottom: -7em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .logo {
     margin: auto;
@@ -94,30 +95,26 @@ body {
 
 .photo {
     float: left;
-    width: 250px;
-    margin: 0em 2em;
+    width: 220px;
+    margin: 0em 4em;
     border-color: #131313;
     border-style: solid;
     border-width: 1em;
 }
-
-.work-col {
-	display: block;
-	float:left;
-    width: 50%;
-    text-align: center;
-}
-
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
 }
 
+.col {
+    margin: auto;
+}
+
 /* Ensures the project name is not affected by project-preview opacity. */
 .project-name {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 300;
     position: absolute;
     margin: 5em 1em 0em 1em;
     padding: .5em;
@@ -131,7 +128,20 @@ body {
     border: 1em;
     border-style: solid;
     border-color: #223927;
-    opacity: .5;
+    /* opacity: .5; */
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin: 3em 0em;
+}
+
+.styled-text {
+    font-family: 'Akaya Kanadaka', cursive;
+    color: #fffee1;
+    font-size: 5em;
 }
 
 /* Changes opacity of image when . */
@@ -149,9 +159,11 @@ body {
 .contact li {
     margin: auto;
     list-style: none;
+    color: #e08032;
+    font-size: 2em;
 }
 .contact li a {
-    color: var(--primary);
+    color: #e08032;
 }
 
 @media (max-width: 1024px) {
