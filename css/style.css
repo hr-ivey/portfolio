@@ -61,7 +61,7 @@ body {
     color: #9ab58f;
     font-family: 'Quicksand', sans-serif;
     margin: auto;
-    background-image: url("/images/moon.png");
+    background-image: url(".\images/moon.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -149,6 +149,19 @@ body {
 }
 .contact li a {
     color: #e08032;
+}
+
+.myButton {
+	background-color:#e08032;
+	border-radius:5px;
+	display:inline-block;
+	color:#fffee1;
+	padding:1em 2em;
+	text-decoration:none;
+    margin: .5em;
+}
+.myButton:hover {
+	background-color:#9ab58f;
 }
 
 /* Animated symbol settings. */
@@ -249,7 +262,6 @@ body {
     height: -webkit-fill-available;
     top: 0;
     left: 0;
-    padding-top: 1em;
     background-color: #131313;
     z-index: 103;
     visibility: hidden;
@@ -267,6 +279,7 @@ body {
 .port .description {
     max-height: 100%;
     padding: 0 3em;
+    text-align: center;
 }
 .port > * {
     opacity: 0;
@@ -290,7 +303,7 @@ body {
 .close {
     width: 50px;
     height: 30px;
-    background: url(/images/times-light.png) no-repeat;
+    background: url(.\images/times-light.png) no-repeat;
     position: absolute;
     right: -100px;
     top: -100px;
@@ -309,14 +322,12 @@ body {
     .floaters {
         display: none;
     }
-    p {
-        font-size: 1.2em;
-    }
     h1 {
         font-size: 2em;
     }
     h2 {
         font-size: 3em;
+        margin: .5em 0em;
     }
     .nav {
         justify-content: center;
@@ -348,12 +359,14 @@ body {
     }
     .port .description {
         max-height: 100%;
-        padding: 0 1.5em;
-        text-align: center;
+        max-height: 100%;
+        padding: 1em;
+        margin-top: 1em;
+}
     }
     .port img {
         width: -webkit-fill-available;
-        margin: 0em 0 2em 0;
+        margin: 1em;
     }
     .close
     {
