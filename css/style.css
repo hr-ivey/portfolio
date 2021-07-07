@@ -3,17 +3,15 @@ h1 {
     font-size: 4em;
     text-align: center;
     font-weight: 700;
-    padding: 1em 0em 1em 0em;
+    padding: 1em 0em .5em 0em;
     margin: 0;
 }
-
 h1::before {
-    content: "#";
+    content: ".";
     color:#e08032;
     font-size:1.5em;
     font-weight: 900;
   }
-
 h2 {
     color: #fffee1;
     text-align: center;
@@ -21,17 +19,15 @@ h2 {
     font-weight: 300;
     font-family: 'Akaya Kanadaka', cursive;
 }
-
 p {
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1.2em;
 }
-
 b {
     color: #e08032;
 }
-a {
+.nav a {
     color: #fffee1;
     text-transform: uppercase;
     text-decoration: none;
@@ -39,7 +35,7 @@ a {
     padding: 10px 0px;
     position: relative;
   }
-  a:after {    
+  .nav a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -55,7 +51,6 @@ a {
     width: 100%; 
     left: 0; 
   }
-
 body {
     background-color: #131313;
     color: #9ab58f;
@@ -65,57 +60,54 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+header {
+    height: 300px;
+}
 #about-me {
     padding: 0em 3em 3em 3em;
     border-radius: 3em;
     text-align: justify;
 }
-
 #contact-me {
     padding: 0em 3em 3em 3em;
+    background-image: url(".\images/twee2.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
-
 #content {
     background-color: #223927;
 }
-
 .nav {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 7em;
     justify-content: flex-end;
 }
-
 .nav li {
     list-style: none;
     margin: .5em 2em;
     border-bottom: .2em;
     font-size: 2em;
 }
-
 .nav li a {
     color: #e08032;
 }
-
 .intro-text {
     font-size: 2.5em;
     font-weight: 300;
 }
-
 .styled-text {
     font-family: 'Akaya Kanadaka', cursive;
     color: #fffee1;
     font-size: 5em;
     text-shadow: 5px 5px 0px #e08032;
 }
-
 .tree-line {
     width: 100%;
     display: block;
     position: relative;
 }
-
 .photo {
     float: left;
     width: 300px;
@@ -124,7 +116,6 @@ body {
     border-style: solid;
     border-width: 1em;
 }
-
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -132,14 +123,11 @@ body {
     padding-bottom: 7em;
     border-radius: 7em;
 }
-
-.col {
-    margin: auto;
-}
 .contact {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 10em;
 }
 .contact li {
     margin: auto;
@@ -167,16 +155,14 @@ body {
 /* Animated symbol settings. */
 .floaters{
     width: -moz-available;
-    height: 10em;
     overflow: hidden;
     color: #fffee1;
 }
 .floaters li{
     position: absolute;
-    display: block;
+    top: 500px;
     list-style: none;
     animation: animate 25s linear infinite;
-    bottom: 250px;
 }
 .floaters li:nth-child(1){
     left: 25%;
@@ -234,12 +220,22 @@ body {
     }
 }
 
-
 /* "My Work" gallery settings */
 .row img {
-    width: 95%;
-    border-radius: 3em;
+    width: 90%;
 }
+/* Applies grayscale to images. */
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  .grayscale:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
 .gallery ul li {
     float: left;
     margin: 1em;
@@ -259,7 +255,8 @@ body {
 .port {
     position: absolute;
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: #131313;
@@ -277,7 +274,7 @@ body {
     float: left;
 }
 .port .description {
-    max-height: 100%;
+    max-height: -webkit-fill-available;
     padding: 0 3em;
     text-align: center;
 }
@@ -318,20 +315,29 @@ body {
 }
 
 /* Mobile-friendly layout changes */
+
+@media (max-width: 1024px) {
+    .gallery ul li 
+}
+
 @media (max-width: 768px) {
+    header {
+        height: auto;
+    }
     .floaters {
         display: none;
     }
-    h1 {
+    h1, h2 {
         font-size: 2em;
+        margin: .5em;
     }
-    h2 {
-        font-size: 3em;
-        margin: .5em 0em;
+    .styled-text {
+        font-size: 4em;
     }
     .nav {
         justify-content: center;
         padding: 0;
+        margin-bottom: 2em;
     }
     .nav li {
         margin: .5em 1em;
@@ -347,22 +353,22 @@ body {
     .contact {
         justify-content: center;
         padding: 0;
+        margin-bottom: 0em;
     }
     .contact li {
     margin: .4em;
     }
     .gallery ul li {
-        max-width: -webkit-fill-available;
+        max-width: 100%;
+        margin: 1em 0em;
     }
     .port {
         position: fixed;
     }
     .port .description {
         max-height: 100%;
-        max-height: 100%;
         padding: 1em;
         margin-top: 1em;
-}
     }
     .port img {
         width: -webkit-fill-available;
@@ -372,3 +378,4 @@ body {
     {
         position: fixed;
     }
+}

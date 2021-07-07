@@ -24,24 +24,24 @@
         <li><a href="#contact-me">Contact</a></li>
         <li><a href=".\resume.pdf" target="_blank">Resume</a></li>
     </ul>
-</header>
+<!-- Introduction text. -->
+<div style="padding: 2em; text-align:center;"><span class="styled-text">Howdy, </span> <span class="intro-text">I’m <b>Ren</b>, a budding web developer and digital artist.</span></center></div>
 
 <!-- Controls the content of the floating objects. -->
-    <ul class="floaters">
-        <li><i class="fal fa-code fa-2x"></i></li>
-        <li><i class="fad fa-deer fa-5x"></i></li>
-        <li><i class="fal fa-code fa-5x"></i></li>
-        <li><i class="fal fa-code fa-3x"></i></li>
-        <li><i class="fal fa-code fa-7x"></i></li>
-        <li><i class="fal fa-code fa-5x"></i></li>
-        <li><i class="fal fa-code fa-3x"></i></li>
-        <li><i class="fal fa-code fa-2x"></i></li>
-        <li><i class="fal fa-code fa-3x"></i></li>
-        <li><i class="fal fa-code fa-8x"></i></li>
+<ul class="floaters">
+    <li><i class="fal fa-code fa-2x"></i></li>
+    <li><i class="fad fa-deer fa-5x"></i></li>
+    <li><i class="fal fa-code fa-5x"></i></li>
+    <li><i class="fal fa-code fa-3x"></i></li>
+    <li><i class="fal fa-code fa-7x"></i></li>
+    <li><i class="fal fa-code fa-5x"></i></li>
+    <li><i class="fal fa-code fa-3x"></i></li>
+    <li><i class="fal fa-code fa-2x"></i></li>
+    <li><i class="fal fa-code fa-3x"></i></li>
+    <li><i class="fal fa-code fa-8x"></i></li>
 </ul>
-
-<!-- Introduction text. -->
-<div class="animate__animated animate__fadeIn animate__slower"><center><span class="styled-text">Howdy, </span> <span class="intro-text">I’m <b>Ren</b>, a web developer and digital artist.</span></center></div>
+<div class="animate__animated animate__fadeIn animate__slower"></div>
+</header>
 
 <!-- Treeline. -->
 <img src=".\images/twee.png" class="tree-line"></div>
@@ -52,7 +52,7 @@
     <img src=".\images/photo.jpg" class="photo">
     <p>I'm located in Appalachia where I spend a great deal of my time designing, drawing, coding, and creating as much as I possibly can.</p>
 
-    <p>I've been in the tech industry for eight years, with five years of experience working remotely. While I've primarily stayed in the field of customer experience, with a particular focus on account management and billing, I've also worked professionally as a web designer at Atlanta's own Memberclicks. Currently, I am in the process of completing the full stack coding bootcamp at Georgia Tech in order to become a web developer.</p>
+    <p>I've been in the tech industry for eight years, with five years of experience working remotely. While I've primarily served in the field of customer experience, with a particular focus on account management and billing, I've also worked professionally as a web designer at Atlanta's own Memberclicks. Currently, I am in the process of completing the full stack coding bootcamp at Georgia Tech in order to become a web developer.</p>
 
     <p>When I'm not neck-deep in code, I like to go running, hiking, watch documentaries, and play video games.</p>
 </section>
@@ -65,10 +65,10 @@
         <div class="row">
             <ul>
                 <a href="#" class="close"></a>
-                <li><a class="image" href="#item01"><img src=".\images/fido-friendly.png" alt=""></a></li>
-                <li><a class="image" href="#item02"><img src=".\images/work-scheduler.png" alt=""></a></li>
-                <li><a class="image" href="#item03"><img src=".\images/code-quiz.png" alt=""></a></li>
-                <li><a class="image" href="#item04"><img src=".\images/more.png" alt=""></a></li>
+                <li><a class="image" href="#item01"><img src=".\images/fido-friendly.png" class="grayscale" alt=""></a></li>
+                <li><a class="image" href="#item02"><img src=".\images/work-scheduler.png" class="grayscale" alt=""></a></li>
+                <li><a class="image" href="#item03"><img src=".\images/code-quiz.png" class="grayscale" alt=""></a></li>
+                <li><a class="image" href="#item04"><img src=".\images/more.png" class="grayscale" alt=""></a></li>
             </ul>
         </div> 
 <!-- Web development description box 01. -->
@@ -77,11 +77,9 @@
              <div class="description">
                 <img src=".\images/fido-friendly.png" alt="">
                  <h2>Fido Friendly</h2>
-                 <p>A web application created as part of a group project utilizing Bootstrap, jquery, plus OMDB and Does the Dog Die APIs. Features a mobile responsive layout. </p>
-                 <center>
-                <a href="https://github.com/hr-ivey/fido-friendly" class="myButton">REPO</a>
+                 <p>A web application created as part of a group project for the full stack Georgia Tech development bootcamp. Uses Bootstrap and jquery, as well as OMDB and Does the Dog Die? APIs. Features a mobile responsive layout. </p>
+                <a href="https://github.com/hr-ivey/fido-friendly/" class="myButton">REPO</a>
                 <a href="https://hr-ivey.github.io/fido-friendly/" class="myButton">DEPLOYED</a>
-                </center>
             </div>
         </div>
     </div>
@@ -90,8 +88,10 @@
         <div class="row">
             <div class="description">
                 <img src=".\images/work-scheduler.png" alt="">
-                <h2>Item 02</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis</p>
+                <h2>Work Scheduler</h2>
+                <p>A responsive work scheduler utilizing Javascript and third party APIs to color-code past, present, and future events for the user, with input saved to local storage. </p>
+               <a href="https://github.com/hr-ivey/work-scheduler/" class="myButton">REPO</a>
+               <a href="https://hr-ivey.github.io/work-scheduler/" class="myButton">DEPLOYED</a>
            </div>
        </div>
    </div>
@@ -100,18 +100,18 @@
         <div class="row">
             <div class="description">
                 <img src=".\images/code-quiz.png" alt="">
-                <h2>Item 03</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis</p>
+                <h2>Javascript Code Quiz</h2>
+                <p>A fun little Javascript Code Quiz made with....well, Javascript!</p>
+               <a href="https://github.com/hr-ivey/code-quiz/" class="myButton">REPO</a>
+               <a href="https://hr-ivey.github.io/code-quiz/" class="myButton">DEPLOYED</a>
         </div>
     </div>
     </div>
 <!-- Web development description box 04. -->
     <div id="item04" class="port">
         <div class="row">
-            <div class="description">
-                <img src=".\images/more.png" alt="">
-                <h2>Item 04</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis</p>
+            <div class="description">  
+                <h2>Even more coming soon!</h2>
         </div>
     </div>
     </div>
