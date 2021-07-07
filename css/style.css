@@ -46,7 +46,7 @@ header {
 }
 #contact-me {
     padding: 0em 3em 3em 3em;
-    background-image: url("/portfolio/images/twee2.png") no-repeat bottom 100%;
+    background-image: url("/portfolio/images/twee2.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -59,6 +59,30 @@ header {
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-bottom: 7em;
+}
+.nav a {
+    color: #fffee1;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    padding: 10px 0px;
+    position: relative;
+}
+.nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  .nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 .nav li {
     list-style: none;
@@ -192,7 +216,6 @@ header {
         opacity: 0;
     }
 }
-
 /* "My Work" gallery settings */
 .row img {
     width: 90%;
@@ -286,7 +309,6 @@ header {
     top: 2em;
     right: 3em;
 }
-
 /* Mobile-friendly layout changes */
 @media (max-width: 768px) {
     header {
