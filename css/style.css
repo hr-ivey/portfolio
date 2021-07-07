@@ -27,36 +27,12 @@ p {
 b {
     color: #e08032;
 }
-.nav a {
-    color: #fffee1;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    padding: 10px 0px;
-    position: relative;
-  }
-  .nav a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
 body {
     background-color: #131313;
     color: #9ab58f;
     font-family: 'Quicksand', sans-serif;
     margin: auto;
-    background-image: url("/portfolio/images/images/moon.png");
+    background-image: url("/portfolio/images/moon.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -70,7 +46,7 @@ header {
 }
 #contact-me {
     padding: 0em 3em 3em 3em;
-    background-image: url("/portfolio/images/images/twee2.png");
+    background-image: url("/portfolio/images/twee2.png") no-repeat bottom 100%;
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100%;
@@ -81,14 +57,14 @@ header {
 .nav {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 7em;
     justify-content: flex-end;
+    margin-bottom: 7em;
 }
 .nav li {
     list-style: none;
+    font-size: 2em;
     margin: .5em 2em;
     border-bottom: .2em;
-    font-size: 2em;
 }
 .nav li a {
     color: #e08032;
@@ -98,8 +74,8 @@ header {
     font-weight: 300;
 }
 .styled-text {
-    font-family: 'Akaya Kanadaka', cursive;
     color: #fffee1;
+    font-family: 'Akaya Kanadaka', cursive;
     font-size: 5em;
     text-shadow: 5px 5px 0px #e08032;
 }
@@ -112,9 +88,7 @@ header {
     float: left;
     width: 300px;
     margin: 0em 4em 1em 0em;
-    border-color: #131313;
-    border-style: solid;
-    border-width: 1em;
+    border-color: #131313 solid 1em;
 }
 .project-container {
     display: flex;
@@ -130,15 +104,14 @@ header {
     margin-bottom: 10em;
 }
 .contact li {
-    margin: auto;
     list-style: none;
     color: #e08032;
     font-size: 2em;
+    margin: auto;
 }
 .contact li a {
     color: #e08032;
 }
-
 .myButton {
 	background-color:#e08032;
 	border-radius:5px;
@@ -224,33 +197,33 @@ header {
 .row img {
     width: 90%;
 }
-/* Applies grayscale to images. */
+/* Applies grayscale overlay to images. */
 .grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
   }
+  /* Removes grayscale overlay on hover. */
   .grayscale:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
-
 .gallery ul li {
     float: left;
     margin: 1em;
     overflow: hidden;
 }
 .gallery {
-    padding: 0px 0 40px;
+    background-color: #121e15;
     position: relative;
     overflow: hidden;
-    background-color: #121e15;
+    padding: 0px 0 40px;
 }
 .gallery ul li {
-    margin-bottom: 20px;
-    max-width: 23%;
     list-style: none;
+    max-width: 23%;
+    margin-bottom: 20px;
 }
 .port {
     position: absolute;
@@ -259,7 +232,6 @@ header {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #131313;
     z-index: 103;
     visibility: hidden;
     -webkit-transform: translateY(-100%);
@@ -267,11 +239,12 @@ header {
      -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    background-color: #131313;
 }
 .port img {
     width: 30%;
-    margin-right: 3em;
     float: left;
+    margin-right: 3em;
 }
 .port .description {
     max-height: -webkit-fill-available;
@@ -315,11 +288,6 @@ header {
 }
 
 /* Mobile-friendly layout changes */
-
-@media (max-width: 1024px) {
-    .gallery ul li 
-}
-
 @media (max-width: 768px) {
     header {
         height: auto;
