@@ -107,12 +107,14 @@ header {
     width: 100%;
     display: block;
     position: relative;
+    margin-bottom: -1.5em;
 }
 .photo {
     float: left;
+    padding: 1em 1em 3em 1em;
     width: 300px;
     margin: 0em 4em 1em 0em;
-    border-color: #131313 solid 1em;
+    background-color: #fffee1;
 }
 .project-container {
     display: flex;
