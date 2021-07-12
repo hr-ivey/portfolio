@@ -109,7 +109,7 @@ header {
 .nav li {
     list-style: none;
     font-size: 2em;
-    margin: .5em 4em;
+    margin: .5em 2em;
     border-bottom: .2em;
 }
 .nav li a {
