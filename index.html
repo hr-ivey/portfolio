@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Calistoga&family=Grand+Hotel&family=Jacques+Francois+Shadow&family=Kavoon&family=Lily+Script+One&family=Mansalva&family=Modak&family=Oleo+Script+Swash+Caps:wght@700&family=Sansita+Swashed:wght@300;500;900&family=Sedgwick+Ave&family=Suez+One&display=swap" rel="stylesheet"> 
     <title>Ren Ivey - Web Developer and Digital Artist</title>
 </head>
 
@@ -18,14 +19,17 @@
 
 <!-- Navigation. -->
 <header>
-    <ul class="nav">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#my-work">Work</a></li>
-        <li><a href="#contact-me">Contact</a></li>
-        <li><a href=".\resume.pdf" target="_blank">Resume</a></li>
-    </ul>
+    <div id="stickynav">
+        <a href="#"><img src="/images/logo.png" id="logo"></a>
+        <ul class="nav">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">Work</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+            <li><a href=".\resume.pdf" target="_blank">Resume</a></li>
+         </ul>
+    </div>
 <!-- Introduction text. -->
-<div style="padding: 2em; text-align:center;"><span class="styled-text">Howdy, </span> <span class="intro-text">I’m <b>Ren</b>, a budding web developer and digital artist.</span></center></div>
+<div style="padding: 2em; text-align:right; margin-top: 20vh; margin-right:2em;"><span class="styled-text">Howdy, </span><br> <span class="intro-text">I’m <b>Ren</b>, a budding front-end developer and digital artist.</span></center></div>
 
 <!-- Controls the content of the floating objects. -->
 <ul class="floaters">
@@ -49,12 +53,12 @@
 <div id="content">
 <section id="about-me">
     <h1>ABOUT-ME</h1>
+    <div>
     <img src=".\images/photo.jpg" class="photo">
-    <p>I'm located in Appalachia where I spend a great deal of my time designing, drawing, coding, and creating as much as I possibly can.</p>
+    <p>I'm located in Appalachia, specifically North Georgia, and I've been working in the tech industry for several years, with over five years of experience working remotely. While I've primarily served in the field of customer experience, with a particular focus in account management and billing, I've also spent some time as a web designer, customizing responsive templates for an ever-growing customer base. Currently, I'm in the process of completing the full stack coding bootcamp at Georgia Tech in order to become a front end web developer.</p>
 
-    <p>I've been in the tech industry for eight years, with five years of experience working remotely. While I've primarily served in the field of customer experience, with a particular focus on account management and billing, I've also worked professionally as a web designer at Atlanta's own Memberclicks. Currently, I am in the process of completing the full stack coding bootcamp at Georgia Tech in order to become a web developer.</p>
-
-    <p>When I'm not neck-deep in code, I like to go running, hiking, watch documentaries, and play video games.</p>
+    <p>When I'm not neck-deep in code, I like to draw, lift, hike, watch documentaries, and play video games.</p>
+</div>
 </section>
 
 <section id="my-work">
@@ -125,12 +129,13 @@
 <footer>
 <section id="contact-me">
     <h1>CONTACT-ME</h1>
+</section>
+</div>
     <ul class="contact">
         <li><a href="mailto:haleyrivey@gmail.com" target="_blank"><i class="fad fa-envelope-square fa-3x"></i></a></li>
         <li><a href="https://www.linkedin.com/in/haleyrivey "target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></li>
         <li><a href="https://github.com/hr-ivey/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a></li>
-    </ul></section>
-</div>
+    </ul>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
