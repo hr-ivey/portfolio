@@ -62,12 +62,9 @@ header {
 #about-me {
     text-align: justify;
 }
-/* #contact-me {
-    background-image: url("/images/twee2.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100%;
-} */
+#contact-me {
+background-color: #131313;
+}
 .sticky {
     position: fixed;
     top: 0;
