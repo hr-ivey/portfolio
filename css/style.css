@@ -165,15 +165,15 @@ background-color: #131313;
 	background-color:var(--links);
 	border-radius:5px;
 	display:inline-block;
-	color:var(--tertiary);
-	padding:1em 2em;
-	text-decoration:none;
+	color: #131313;
+	padding: 2em 3em;
+    font-weight: 700;
+    text-decoration: none;
     margin: .5em;
 }
 .myButton:hover {
 	background-color:var(--text);
 }
-
 /* Animated symbol settings. */
 .floaters{
     overflow: hidden;
@@ -241,7 +241,7 @@ background-color: #131313;
         opacity: 0;
     }
 }
-/* "My Work" gallery settings */
+/* Web development gallery settings */
 .row img {
     width: 100%;
 }
@@ -338,8 +338,10 @@ background-color: #131313;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: fit-content;
 }
 .art-gallery {
+    background-color: var(--secondary);
     padding-top: 40px;
     @media screen and (min-width: 991px) {
       padding: 60px 30px 0 30px;
@@ -392,6 +394,13 @@ background-color: #131313;
     }
     #content {
         padding: 0em 1.5em;
+     }
+     #overlay img {
+        max-width: -webkit-fill-available;
+     }
+    .img-wrapper img
+    {
+        max-width: 100%;
      }
     .floaters {
         display: none;
