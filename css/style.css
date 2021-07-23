@@ -32,7 +32,7 @@ h2 {
 p {
     font-size: 1.3em;
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 2em;
 }
 b {
     color: var(--links);
@@ -348,7 +348,7 @@ background-color: #131313;
   .img-wrapper {
     position: relative;
     float: left;
-    margin: 2em;
+    margin: 1em 2em;
   }
   .img-wrapper img {
     width: 400px;
@@ -365,10 +365,6 @@ background-color: #131313;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    i {
-      color: #fff;
-      font-size: 3em;
-    }
   }
   #overlay {
     background: rgba(0,0,0,0.7);
@@ -380,53 +376,26 @@ background-color: #131313;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    // Removes blue highlight
-    -webkit-user-select: none;
-    -moz-user-select: none;    
-    -ms-user-select: none; 
-    user-select: none; 
-    img {
-      margin: 0;
-      width: 80%;
-      height: auto;
-      object-fit: contain;
-      padding: 5%;
-      @media screen and (min-width:768px) {
-          width: 60%;
-      }
-      @media screen and (min-width:1200px) {
-          width: 50%;
-      }
-    }
+    z-index: 1;
+}
+#overlay img {
+    margin-top: 1em;
+    max-width: 100%;
+    max-height: 90vh;
+}
   }
-  
-  #nextButton {
+#nextButton {
     margin: 1em;
     color: #fff;
     font-size: 2em;
     transition: opacity 0.8s;
-    &:hover {
-      opacity: 0.7;
-    }
-    @media screen and (min-width:768px) {
-      font-size: 3em;
-    }
   }
-  
-  #prevButton {
+#prevButton {
     margin: 1em;
     color: #fff;
     font-size: 2em;
     transition: opacity 0.8s;
-    &:hover {
-      opacity: 0.7;
-    }
-    @media screen and (min-width:768px) {
-      font-size: 3em;
-    }
   }
-  
   #exitButton {
     color: #fff;
     font-size: 2em;
@@ -434,16 +403,13 @@ background-color: #131313;
     position: absolute;
     top: 15px;
     right: 15px;
-    &:hover {
-      opacity: 0.7;
-    }
-    @media screen and (min-width:768px) {
-      font-size: 3em;
-    }
   }
 
 /* Mobile-friendly layout changes */
 @media (max-width: 1024px) {
+    p {
+        line-height: 1.5em;
+    }
     header {
         height: auto;
     }
