@@ -42,7 +42,7 @@ body {
     color: var(--text);
     font-family: 'Quicksand', sans-serif;
     margin: auto;
-    background-image: url(".\portfolio/images/moon.png");
+    background-image: url("/portfolio/images/moon.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -320,7 +320,7 @@ background-color: #131313;
 .close {
     width: 50px;
     height: 30px;
-    background: url(.\portfolio/images/times-light.png) no-repeat;
+    background: url(/portfolio/images/times-light.png) no-repeat;
     position: absolute;
     right: -100px;
     top: -100px;
