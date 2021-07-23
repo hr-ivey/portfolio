@@ -42,7 +42,7 @@ body {
     color: var(--text);
     font-family: 'Quicksand', sans-serif;
     margin: auto;
-    background-image: url("/portfolio/images/moon.png");
+    background-image: url("./portfolio/images/moon.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -71,6 +71,7 @@ background-color: #131313;
     width: 100%;
     background-color: #131313;
     z-index: 1000;
+    transition: 1s all;
   }
 #badges {
     text-align: center;
@@ -256,16 +257,16 @@ background-color: #131313;
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
-.gallery {
+.web-gallery {
     background-color: var(--secondary);
     position: relative;
     overflow: hidden;
     padding: 0px 0 40px;
 }
-.gallery ul {
+.web-gallery ul {
     text-align: center;
 }
-.gallery ul li {
+.web-gallery ul li {
     list-style: none;
     max-width: 22%;
     margin: 1em 1em;
@@ -319,7 +320,7 @@ background-color: #131313;
 .close {
     width: 50px;
     height: 30px;
-    background: url(/portfolio/images/times-light.png) no-repeat;
+    background: url(./portfolio/images/times-light.png) no-repeat;
     position: absolute;
     right: -100px;
     top: -100px;
@@ -332,6 +333,115 @@ background-color: #131313;
     top: 2em;
     right: 3em;
 }
+
+#art-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.art-gallery {
+    padding-top: 40px;
+    @media screen and (min-width: 991px) {
+      padding: 60px 30px 0 30px;
+    }
+  }
+  .img-wrapper {
+    position: relative;
+    float: left;
+    margin: 2em;
+  }
+  .img-wrapper img {
+    width: 400px;
+    height: 400px;
+  }
+  .img-overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    i {
+      color: #fff;
+      font-size: 3em;
+    }
+  }
+  #overlay {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    // Removes blue highlight
+    -webkit-user-select: none;
+    -moz-user-select: none;    
+    -ms-user-select: none; 
+    user-select: none; 
+    img {
+      margin: 0;
+      width: 80%;
+      height: auto;
+      object-fit: contain;
+      padding: 5%;
+      @media screen and (min-width:768px) {
+          width: 60%;
+      }
+      @media screen and (min-width:1200px) {
+          width: 50%;
+      }
+    }
+  }
+  
+  #nextButton {
+    margin: 1em;
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media screen and (min-width:768px) {
+      font-size: 3em;
+    }
+  }
+  
+  #prevButton {
+    margin: 1em;
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media screen and (min-width:768px) {
+      font-size: 3em;
+    }
+  }
+  
+  #exitButton {
+    color: #fff;
+    font-size: 2em;
+    transition: opacity 0.8s;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media screen and (min-width:768px) {
+      font-size: 3em;
+    }
+  }
+
 /* Mobile-friendly layout changes */
 @media (max-width: 1024px) {
     header {
@@ -366,7 +476,7 @@ background-color: #131313;
     .contact li {
     margin: .4em;
     }
-    .gallery ul li {
+    .web-gallery ul li {
         max-width: 100%;
         margin: 1em 0em;
     }
