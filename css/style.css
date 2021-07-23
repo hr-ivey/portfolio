@@ -348,7 +348,7 @@ background-color: #131313;
   .img-wrapper {
     position: relative;
     float: left;
-    margin: 1em 2em;
+    margin: 1em;
   }
   .img-wrapper img {
     width: 400px;
@@ -376,33 +376,10 @@ background-color: #131313;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 }
 #overlay img {
-    margin-top: 1em;
-    max-width: 100%;
-    max-height: 90vh;
-}
-  }
-#nextButton {
-    margin: 1em;
-    color: #fff;
-    font-size: 2em;
-    transition: opacity 0.8s;
-  }
-#prevButton {
-    margin: 1em;
-    color: #fff;
-    font-size: 2em;
-    transition: opacity 0.8s;
-  }
-  #exitButton {
-    color: #fff;
-    font-size: 2em;
-    transition: opacity 0.8s;
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    margin-top: 2em;
+    max-height: 80vh;
   }
 
 /* Mobile-friendly layout changes */
