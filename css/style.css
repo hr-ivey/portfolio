@@ -14,7 +14,7 @@ h1 {
     font-size: 3em;
     text-align: center;
     font-weight: 300;
-    padding: 2em 0em .5em 0em;
+    padding: 2.5em 0em;
     margin: 0;
 }
 h1::before {
@@ -26,7 +26,7 @@ h1::before {
 h2 {
     color: var(--tertiary);
     text-align: center;
-    font-size: 2em;
+    font-size: 2em 0em 1em 0em;
     font-weight: 300;
 }
 p {
@@ -63,7 +63,10 @@ header {
     text-align: justify;
 }
 #contact-me {
-background-color: #131313;
+    background-color: #131313;
+    background-image: url("/portfolio/images/eye.gif");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .sticky {
     position: fixed;
