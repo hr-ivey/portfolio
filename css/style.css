@@ -62,12 +62,12 @@ header {
 #about-me {
     text-align: justify;
 }
-#contact-me {
+/* #contact-me {
     background-color: #131313;
     background-image: url("/portfolio/images/eye.gif");
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 .sticky {
     position: fixed;
     top: 0;
