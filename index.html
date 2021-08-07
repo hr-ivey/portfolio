@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,7 @@
          </ul>
     </div>
 <!-- Introduction text. -->
-<div style="padding: 2em; text-align:right; margin-top: 20vh; margin-right:2em;"><span class="styled-text">Howdy, </span><br> <span class="intro-text">I’m <b>Ren</b>, a budding front-end developer and digital artist.</span></center></div>
+<div style="padding: 2em; text-align:right; margin-top: 20vh; margin-right:2em;"><span class="styled-text">Howdy, </span><br> <span class="intro-text">I’m <b>Ren</b>, a budding front-end developer and digital artist.</span></div>
 
 <!-- Controls the content of the floating objects. -->
 <ul class="floaters">
@@ -49,15 +50,19 @@
 <!-- Treeline. -->
 <img src=".\images/twee.png" class="tree-line"></div>
 
-<div id="content">
-    <section id="about-me">
+<div id="content" class="container-fluid">
+    <section id="about-me" class="row">
         <h1>ABOUT-ME</h1>
-        <div>
+        <div class="col">
         <img src=".\images/photo.jpg" class="photo">
+        </div>
+        <div class="col">
         <p>I'm located in Appalachia, specifically North Georgia, and I've been working in the tech industry for several years, with over five years of experience working remotely. While I've primarily served in the field of customer experience, with a particular focus in account management and billing, I've also spent a bit of time as a web designer at Memberclicks in Atlanta. Currently, I'm in the process of completing the full stack coding bootcamp at Georgia Tech in order to become a full time front end web developer.</p>
 
         <p>When I'm not neck-deep in code, I like to draw, lift, hike, watch documentaries, and play video games.</p>
+        </div>
     </section>
+ <!-- Skill badges. -->
     <div id="badges">
         <i class="fab fa-css3-alt fa-6x"></i>
         <i class="fab fa-html5 fa-6x"></i>
@@ -65,141 +70,35 @@
         <i class="fab fa-react fa-6x"></i>
         <i class="fab fa-node-js fa-6x"></i>
     </div>
-    <section id="my-work">
         <h1>MY-WORK</h1>
 <!-- All web development gallery images. -->
-        <section class="web-gallery">
+        <div class="row justify-content-center">
             <h2>Web Development</h2>
-            <div class="row">
-                <ul>
-                    <a href="#" class="close"></a>
-                    <li><a class="image" href="#item01"><img src=".\images/fido-friendly.png" class="grayscale" alt=""></a></li>
-                    <li><a class="image" href="#item02"><img src=".\images/haunted-doll-house.png" class="grayscale" alt=""></a></li>
-                    <li><a class="image" href="#item03"><img src=".\images/work-scheduler.png" class="grayscale" alt=""></a></li>
-                    <li><a class="image" href="#item04"><img src=".\images/code-quiz.png" class="grayscale" alt=""></a></li>
-                </ul>
-            </div> 
-<!-- Web development description box 01. -->
-        <div id="item01" class="port">
-            <div class="row">
-                <div class="description">
-                    <img src=".\images/fido-friendly.png" alt="">
-                    <h2>Fido Friendly</h2>
-                    <p>A web application created as part of a group project for the Georgia Tech full stack development bootcamp. Uses Bootstrap and jquery, as well as OMDB and Does the Dog Die? APIs. Features a mobile responsive layout. </p>
-                    <a href="https://github.com/hr-ivey/fido-friendly/" class="myButton">REPO</a>
-                    <a href="https://hr-ivey.github.io/fido-friendly/" class="myButton">DEPLOYED</a>
+            <div class="col">
+                <div class="row">
+                    <a href=".\images/fido-friendly.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/fido-friendly.png" class="img-fluid" alt=""></a>
+                    <a href=".\images/haunted-doll-house.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/haunted-doll-house.png" class="img-fluid" alt=""></a>
+                    <a href=".\images/work-scheduler.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/work-scheduler.png" class="img-fluid" alt=""></a>
+                    <a href=".\images/code-quiz.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/code-quiz.png" class="img-fluid" alt=""></a>
                 </div>
             </div>
         </div>
-<!-- Web development description box 02. -->
-        <div id="item02" class="port">
+<!-- All digital art gallery images. -->
+    <div class="row justify-content-center">
+        <h2>Digital Art</h2>
+        <div class="col">
             <div class="row">
-                <div class="description">
-                    <img src=".\images/haunted-doll-house.png" alt="">
-                    <h2>Work Scheduler</h2>
-                    <p>A web application created as part of a group project for the Georgia Tech full stack development bootcamp. Features a mobile responsive layout. </p>
-                <a href="https://github.com/ahuffma2/Haunted-Doll-House" class="myButton">REPO</a>
-                <a href="haunted-doll-house.herokuapp.com/" class="myButton">DEPLOYED</a>
-            </div>
+                 <a href="./digital-art/BrynLich.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/BrynLich-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/CalciumBoys.png" data-toggle="lightbox" data-gallery="artgallery" class="col-lg-3 gy-4"><img src="./digital-art/CalciumBoys-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/DungeonBoys.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/DungeonBoys-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/LineUp.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/LineUp-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/7rings.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/7rings-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/VorynandIndoril.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/VorynandIndoril-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/Bojack.gif" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/Bojack-thumbnail.png" class="img-fluid"></a>
+                 <a href="./digital-art/THATSMYBOOOOOY.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/THATSMYBOOOOOY-thumbnail.png" class="img-fluid"></a>
+             </div>
         </div>
     </div>
-<!-- Web development description box 03. -->
-        <div id="item03" class="port">
-            <div class="row">
-                <div class="description">
-                    <img src=".\images/work-scheduler.png" alt="">
-                    <h2>Javascript Code Quiz</h2>
-                    <p>A work day scheduler application.</p>
-                <a href="https://github.com/hr-ivey/work-day-scheduler" class="myButton">REPO</a>
-                <a href="https://hr-ivey.github.io/work-day-scheduler/" class="myButton">DEPLOYED</a>
-            </div>
-        </div>
-        </div>
-<!-- Web development description box 04. -->
-        <div id="item04" class="port">
-            <div class="row">
-                <div class="description">
-                    <img src=".\images/code-quiz.png" alt="">
-                    <h2>Javascript Code Quiz</h2>
-                    <p>A fun little Javascript Code Quiz made with....well, Javascript!</p>
-                <a href="https://github.com/hr-ivey/code-quiz/" class="myButton">REPO</a>
-                <a href="https://hr-ivey.github.io/code-quiz/" class="myButton">DEPLOYED</a>
-            </div>
-        </div>
-        </div>
-        </section>
-<!-- All digital art gallery images. -->
-    <section class="art-gallery">
-        <h2>Digital Art</h2>
-        <div id="art-container">
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/BrynLich.png"><img src="./digital-art/BrynLich-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/CalciumBoys.png"><img src="./digital-art/CalciumBoys-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/DungeonBoys.png"><img src="./digital-art/DungeonBoys-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/LineUp.png"><img src="./digital-art/LineUp-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/7rings.png"><img src="./digital-art/7rings-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/VorynandIndoril.png"><img src="./digital-art/VorynandIndoril-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/Bojack.gif"><img src="./digital-art/Bojack-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-        <div class="row">
-            <div class="img-wrapper">
-                 <a href="./digital-art/THATSMYBOOOOOY.png"><img src="./digital-art/THATSMYBOOOOOY-thumbnail.png" class="img-responsive"></a>
-                 <div class="img-overlay">
-                     <i class="fal fa-plus fa-2x" aria-hidden="true"></i>
-                </div>
-             </div>
-        </div>
-    </section>
-</section>
-</div>
-
 <footer>
 <section id="contact-me">
     <h1>CONTACT-ME</h1>
@@ -212,5 +111,7 @@
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src=".\script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

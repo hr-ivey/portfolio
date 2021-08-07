@@ -50,7 +50,6 @@ header {
     display: none;
 }
 #content {
-    padding: 0em 5em 5em 5em;
     background-color: var(--primary);
 }
 #about-me {
@@ -132,9 +131,8 @@ header {
 .photo {
     float: left;
     padding: 1em 1em 3em 1em;
-    width: 260px;
-    margin: 0em 4em 1em 0em;
     background-color: var(--tertiary);
+    max-width: 100%;
 }
 .project-container {
     display: flex;
@@ -238,98 +236,6 @@ header {
         opacity: 0;
     }
 }
-/* Web development gallery settings */
-.row img {
-    width: 400px; 
-    height: 500px; 
-}
-/* Applies grayscale overlay to images. */
-.grayscale {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-  }
-  /* Removes grayscale overlay on hover. */
-  .grayscale:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-.web-gallery {
-    background-color: var(--secondary);
-    position: relative;
-    overflow: hidden;
-    padding: 40px 0px;
-}
-.web-gallery ul {
-    text-align: center;
-}
-.web-gallery ul li {
-    list-style: none;
-    max-width: 22%;
-    margin: 1em 1em;
-    display: inline-block;
-}
-.port {
-    position: absolute;
-    width: -webkit-fill-available;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 103;
-    visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-     -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    background-color: #131313;
-}
-.port img {
-    float: left;
-    margin-right: 3em;
-}
-.port .description {
-    max-height: -webkit-fill-available;
-    padding: 3em;
-    text-align: center;
-}
-.port > * {
-    opacity: 0;
-    -webkit-transition: all 0.5s linear;
-    -moz-transition: all 0.5s linear;
-    transition: all 0.5s linear;
-}
-.port.item_open {
-    visibility: visible;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.port > * {
-    opacity: 1;
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-}
-.close {
-    width: 50px;
-    height: 30px;
-    background: url(/portfolio/images/times-light.png) no-repeat;
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    z-index: 1004;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-}
-.item_open .close {
-    top: 2em;
-    right: 3em;
-}
 #art-container {
     display: flex;
     flex-wrap: wrap;
@@ -385,15 +291,8 @@ header {
     header {
         height: auto;
     }
-    #content {
-        padding: 0em 1.5em;
-     }
      #overlay img {
         max-width: -webkit-fill-available;
-     }
-    .img-wrapper img
-    {
-        max-width: 100%;
      }
     .floaters {
         display: none;
@@ -421,29 +320,4 @@ header {
     .contact li {
     margin: .4em;
     }
-    .web-gallery ul li {
-        max-width: 100%;
-        margin: 1em 0em;
-    }
-    .port {
-        position: fixed;
-    }
-    .port .description {
-        max-height: 100%;
-        padding: 1em;
-        margin-top: 1em;
-    }
-    .port img {
-        width: -webkit-fill-available;
-        margin: 1em;
-    }
-    .close
-    {
-        position: fixed;
-    }
-}
-@media (max-width: 767px) {
-.photo {
-    width: -webkit-fill-available;
-    margin: 2em;
 }
