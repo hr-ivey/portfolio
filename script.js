@@ -1,8 +1,5 @@
 // Lightbox
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-  // event.preventDefault();
-  $(this).ekkoLightbox();
-}); 
+baguetteBox.run('.tz-gallery');
  
  // Sticky nav settings.
 window.onscroll = function() {myFunction()};

@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/c8254ad679.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c8254ad679.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+
     <title>Ren Ivey - Web Developer and Digital Artist</title>
 </head>
 
@@ -54,9 +55,9 @@
     <section id="about-me" class="row">
         <h1>ABOUT-ME</h1>
         <div class="col">
-        <img src=".\images/photo.jpg" class="photo">
+        <center><img src=".\images/photo.jpg" class="photo"></center>
         </div>
-        <div class="col">
+        <div class="col-lg-8">
         <p>I'm located in Appalachia, specifically North Georgia, and I've been working in the tech industry for several years, with over five years of experience working remotely. While I've primarily served in the field of customer experience, with a particular focus in account management and billing, I've also spent a bit of time as a web designer at Memberclicks in Atlanta. Currently, I'm in the process of completing the full stack coding bootcamp at Georgia Tech in order to become a full time front end web developer.</p>
 
         <p>When I'm not neck-deep in code, I like to draw, lift, hike, watch documentaries, and play video games.</p>
@@ -71,34 +72,103 @@
         <i class="fab fa-node-js fa-6x"></i>
     </div>
         <h1>MY-WORK</h1>
-<!-- All web development gallery images. -->
-        <div class="row justify-content-center">
-            <h2>Web Development</h2>
-            <div class="col">
-                <div class="row">
-                    <a href=".\images/fido-friendly.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/fido-friendly.png" class="img-fluid" alt=""></a>
-                    <a href=".\images/haunted-doll-house.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/haunted-doll-house.png" class="img-fluid" alt=""></a>
-                    <a href=".\images/work-scheduler.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/work-scheduler.png" class="img-fluid" alt=""></a>
-                    <a href=".\images/code-quiz.png" data-toggle="lightbox" data-gallery="web-gallery" class="col-lg-3 gy-4"><img src=".\images/code-quiz.png" class="img-fluid" alt=""></a>
+<!-- Web Development gallery. -->
+<div class="tz-gallery">
+    <h2>Web Development</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="thumbnail">
+                <a class="lightbox" href=".\images/fido-friendly.png">
+                    <img src=".\images/fido-friendly.png" alt="">
+                </a>
+                <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
         </div>
-<!-- All digital art gallery images. -->
-    <div class="row justify-content-center">
-        <h2>Digital Art</h2>
-        <div class="col">
-            <div class="row">
-                 <a href="./digital-art/BrynLich.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/BrynLich-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/CalciumBoys.png" data-toggle="lightbox" data-gallery="artgallery" class="col-lg-3 gy-4"><img src="./digital-art/CalciumBoys-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/DungeonBoys.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/DungeonBoys-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/LineUp.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/LineUp-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/7rings.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/7rings-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/VorynandIndoril.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/VorynandIndoril-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/Bojack.gif" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/Bojack-thumbnail.png" class="img-fluid"></a>
-                 <a href="./digital-art/THATSMYBOOOOOY.png" data-toggle="lightbox" data-gallery="art-gallery" class="col-lg-3 gy-4"><img src="./digital-art/THATSMYBOOOOOY-thumbnail.png" class="img-fluid"></a>
-             </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href=".\images/haunted-doll-house.png">
+                        <img src=".\images/haunted-doll-house.png" alt="">
+                    </a>
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href=".\images/work-scheduler.png">
+                        <img src=".\images/work-scheduler.png" alt="">
+                    </a>
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                    <a class="lightbox" href=".\images/code-quiz.png">
+                        <img src=".\images/code-quiz.png" alt="">
+                    </a>
+                    <div class="caption">
+                        <h3>Thumbnail label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+<!-- Digital art gallery. -->
+<div class="tz-gallery">
+    <h2>Digital Art Gallery</h2>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/BrynLich.png"><img src=".\digital-art/BrynLich-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/CalciumBoys.png"><img src=".\digital-art/CalciumBoys-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/DungeonBoys.png"><img src=".\digital-art/DungeonBoys-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/LineUp.png"><img src=".\digital-art/LineUp-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/7rings.png"><img src=".\digital-art/7rings-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/VorynandIndoril.png"><img src=".\digital-art/VorynandIndoril-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/Bojack.gif"><img src=".\digital-art/Bojack-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="thumbnail">
+                        <a class="lightbox" href=".\digital-art/THATSMYBOOOOOY.png"><img src=".\digital-art/THATSMYBOOOOOY-thumbnail.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
 <footer>
 <section id="contact-me">
     <h1>CONTACT-ME</h1>
@@ -110,8 +180,8 @@
 </footer>
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
 <script src=".\script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js" integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
