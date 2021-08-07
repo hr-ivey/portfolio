@@ -247,7 +247,7 @@ header {
 /* Web development gallery settings */
 .row img {
     width: 400px; 
-    height: 400px; 
+    height: 500px; 
 }
 /* Applies grayscale overlay to images. */
 .grayscale {
