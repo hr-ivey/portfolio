@@ -25,6 +25,7 @@ h2 {
     font-weight: 300;
     margin: 1em 0em 1em 0em;
     text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 p {
     font-size: x-large;
@@ -59,7 +60,7 @@ header {
 }
 #about-me {
     text-align: justify;
-    margin: 0em 10em;
+    margin: 0em 5em;
     padding-top: 5em;
 }
 #my-work {
