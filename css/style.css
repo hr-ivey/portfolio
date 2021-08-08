@@ -45,13 +45,14 @@ header {
     height: 50vh;
 }
 #logo {
-    height: 80px;
+    height: 100px;
     padding: 1em 5em;
     float: left;
     display: none;
 }
 #content {
     background-color: var(--primary);
+    padding: 0em 2em;
 }
 #about-me {
     text-align: justify;
@@ -65,12 +66,11 @@ header {
     background-color: #131313;
 }
 #badges {
+    padding: 2em;
     text-align: center;
     color: #32553a;
+    margin: 5em;
   }
-#badges .fab {
-    padding: .2em 1em;
-}
 .sticky {
     position: fixed;
     top: 0;
