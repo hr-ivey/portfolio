@@ -11,18 +11,18 @@ ul {
 }
 h1 {
     color: var(--links);
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     padding: 1em 0em;
     margin: 0;
 }
 h2 {
     color: var(--tertiary);
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 300;
-    margin: 2em 0em;
+    margin: 1em 0em 2em 0em;
 }
 p {
     font-size: x-large;
@@ -158,7 +158,7 @@ header {
 .contact li a {
     color: var(--links);
 }
-.myButton {
+.btn{
 	background-color:var(--links);
 	border-radius:5px;
     display: inherit;
@@ -168,7 +168,7 @@ header {
     text-decoration: none;
     margin: 1em;
 }
-.myButton:hover {
+.btn:hover {
 	background-color:var(--text);
 }
 .web-thumb {
@@ -263,7 +263,7 @@ header {
     max-height:440px;
 }
 .tz-gallery .caption h3 {
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     padding-top: 1em;
 }
