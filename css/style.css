@@ -10,10 +10,10 @@ ul {
     padding: 0;
 }
 h1 {
-    color: var(--links);
+    color: var(--secondary);
     font-size: 4em;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     padding: 1em 0em;
     margin: 0;
 }
@@ -78,7 +78,7 @@ header {
     width: 100%;
     background-color: #131313;
     z-index: 1000;
-    transition: 1s all;
+    transition: .3s all;
   }
 .nav {
     display: flex;
@@ -101,7 +101,7 @@ header {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #fff;
+    background: var(--tertiary);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -113,7 +113,6 @@ header {
     list-style: none;
     font-size: 2em;
     margin: .5em 2em;
-    border-bottom: .2em;
 }
 .nav li a {
     color: var(--links);
@@ -255,6 +254,9 @@ header {
 .tz-gallery img {
     border-radius: 2px;
     max-width: 100%;
+    border-color: #223927;
+    border-width: 1em;
+    border-style: solid;
 }
 .tz-gallery .caption{
     background-color: var(--primary);
@@ -301,6 +303,9 @@ header {
      }
     .floaters {
         display: none;
+    }
+    .photo {
+        margin-bottom: 3em;
     }
     .styled-text {
         font-size: 4em;
