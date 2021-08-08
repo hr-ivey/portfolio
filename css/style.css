@@ -10,10 +10,9 @@ ul {
     padding: 0;
 }
 h1 {
-    color: var(--secondary);
+    color: #131313;
     font-size: 4em;
     text-align: center;
-    font-weight: 700;
     padding: 1em 0em;
     margin: 0;
 }
@@ -113,7 +112,7 @@ header {
 .nav li {
     list-style: none;
     font-size: 2em;
-    margin: .5em 2em;
+    margin: 1em 2em;
 }
 .nav li a {
     color: var(--links);
