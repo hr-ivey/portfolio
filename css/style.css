@@ -52,15 +52,16 @@ header {
 }
 #content {
     background-color: var(--primary);
-    padding: 0em 2em;
+    padding: 0em;
 }
 #about-me {
     text-align: justify;
+    margin: 0em 2em;
 }
 #my-work {
     background-color: #121e15;
     width: 100%;
-    margin-bottom: 5em;
+    padding: 2em;
 }
 #contact-me {
     background-color: #131313;
@@ -156,7 +157,7 @@ header {
     margin: auto;
 }
 .contact li a {
-    color: var(--links);
+    color: var(--tertiary);
 }
 .btn{
 	background-color:var(--links);
@@ -164,9 +165,9 @@ header {
     display: inherit;
 	color: #131313;
 	padding: 1em;
+    margin: 1em;
     font-weight: 700;
     text-decoration: none;
-    margin: 1em;
 }
 .btn:hover {
 	background-color:var(--text);
@@ -259,8 +260,8 @@ header {
     background-color: var(--primary);
     padding: 1em;
     text-align: center;
-    height:440px;
-    max-height:440px;
+    height:450px;
+    max-height:500px;
 }
 .tz-gallery .caption h3 {
     font-size: x-large;
@@ -278,12 +279,24 @@ header {
 /* Mobile-friendly layout changes */
 @media (max-width: 1024px) {
     p {
-        line-height: 1.5em;
+        line-height: 1em;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
     }
     header {
         height: auto;
     }
+    #my-work {
+        padding: 0em;
+    }
      #badges {
+        margin: 0;
+     }
+     .contact {
         margin: 0;
      }
     .floaters {
