@@ -283,8 +283,8 @@ header {
     header {
         height: auto;
     }
-     #overlay img {
-        max-width: -webkit-fill-available;
+     #badges {
+        margin: 0;
      }
     .floaters {
         display: none;
@@ -299,10 +299,6 @@ header {
     }
     .nav li {
         margin: .5em 1em;
-    }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
     }
     .contact {
         justify-content: center;
