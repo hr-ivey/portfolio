@@ -10,23 +10,27 @@ ul {
     padding: 0;
 }
 h1 {
-    color: #131313;
+    color: var(--text);
+    font-family: 'Gilda Display', serif;
     font-size: 4em;
+    font-weight:400;
     text-align: center;
     padding: 1em 0em;
     margin: 0;
 }
 h2 {
-    color: var(--tertiary);
+    color: var(--links);
     text-align: center;
     font-size: 3em;
     font-weight: 300;
-    margin: 1em 0em 2em 0em;
+    margin: 1em 0em 1em 0em;
+    text-transform: uppercase;
 }
 p {
     font-size: x-large;
     font-weight: 400;
-    line-height: 2em;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5em;
 }
 b {
     color: var(--links);
@@ -55,7 +59,8 @@ header {
 }
 #about-me {
     text-align: justify;
-    margin: 0em 4em;
+    margin: 0em 10em;
+    padding-top: 5em;
 }
 #my-work {
     background-color: #121e15;
@@ -123,7 +128,7 @@ header {
 }
 .styled-text {
     color: var(--links);
-    /* font-family: 'Sedgwick Ave', cursive; */
+    font-family: 'Gilda Display', serif;
     font-size: 6em;
 }
 .tree-line {
@@ -266,8 +271,10 @@ header {
     max-height:500px;
 }
 .tz-gallery .caption h3 {
+    color: var(--links);
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
     font-size: x-large;
-    font-weight: bold;
     padding-top: 1em;
 }
 .tz-gallery .caption p {
