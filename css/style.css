@@ -140,7 +140,10 @@ header {
 .photo {
     padding: 1em 1em 3em 1em;
     background-color: var(--tertiary);
-    width: 100%;
+    width: 90%;
+    position: absolute;
+    bottom:0;
+    left: 0;
 }
 .project-container {
     display: flex;
