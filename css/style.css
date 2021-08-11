@@ -11,7 +11,7 @@ ul {
 }
 h1 {
     color: var(--text);
-    font-family: 'Gilda Display', serif;
+    font-family: 'Stoke', serif;
     font-size: 4em;
     font-weight:400;
     text-align: center;
@@ -129,7 +129,7 @@ header {
 }
 .styled-text {
     color: var(--links);
-    font-family: 'Gilda Display', serif;
+    font-family: 'Stoke', serif;
     font-size: 6em;
 }
 .tree-line {
@@ -182,7 +182,7 @@ header {
 }
 .web-thumb {
     width: 100%;
-    height: 500px;
+    height: 550px;
 }
 /* Animated symbol settings. */
 .floaters{
