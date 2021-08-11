@@ -279,7 +279,6 @@ header {
     text-transform: uppercase;
     font-family: 'Quicksand', sans-serif;
     font-size: x-large;
-    padding-top: 1em;
 }
 .tz-gallery .caption p {
     font-size: large;
@@ -319,6 +318,7 @@ header {
         display: none;
     }
     .photo {
+        position: inherit;
         margin-bottom: 3em;
     }
     .styled-text {
