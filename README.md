@@ -4,6 +4,7 @@
 My personal portfolio featuring examples of my web development projects, as well as digital art.
 
 Deployed: https://hr-ivey.github.io/portfolio/
+
 ## Usage
 ![Portfolio website screenshot](/screenshot.png)
 
