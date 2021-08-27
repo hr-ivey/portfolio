@@ -23,9 +23,14 @@ h2 {
     text-align: center;
     font-size: 3em;
     font-weight: 300;
-    margin: 1em 0em 1em 0em;
+    margin: 2em 0em;
     text-transform: uppercase;
     letter-spacing: 0.15em;
+}
+h3 {
+    font-weight:700;
+    font-size: 2em;
+    margin: 1.5em 0em;
 }
 p {
     font-size: x-large;
@@ -48,35 +53,36 @@ body {
 header {
     height: 50vh;
 }
+.container {
+    max-width: 80%;
+}
 #logo {
     height: 100px;
     padding: 1em 5em;
     float: left;
     display: none;
 }
-#content {
+#about-me {
     background-color: var(--primary);
     padding: 0em;
 }
-#about-me {
+#about-me, #my-work, #contact-me {
     text-align: justify;
-    margin: 0em 5em;
-    padding-top: 5em;
-}
+    margin: 0em 0em 5em 0em;
+    }
 #my-work {
     background-color: #121e15;
     width: 100%;
     padding: 2em;
 }
-#contact-me {
+footer {
     background-color: #131313;
-    margin: 5em 0em;
+    padding-top: 5em;
 }
 #badges {
-    padding: 2em;
     text-align: center;
     color: #32553a;
-    margin: 5em;
+    margin: 2em 0em;
   }
 .sticky {
     position: fixed;
@@ -138,12 +144,12 @@ header {
     position: relative;
 }
 .photo {
-    padding: 1em 1em 3em 1em;
+    padding: 1.5em 1em 4em 1em;
     background-color: var(--tertiary);
-    width: 90%;
-    position: absolute;
-    bottom:0;
-    left: 0;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .project-container {
     display: flex;
@@ -151,6 +157,9 @@ header {
     background-color: #131313;
     padding-bottom: 7em;
     border-radius: 7em;
+}
+.web-desc {
+    background-color: var(--primary);
 }
 .contact {
     display: flex;
@@ -170,19 +179,18 @@ header {
 .btn{
 	background-color:var(--links);
 	border-radius:5px;
-    display: inherit;
 	color: #131313;
-	padding: 1em;
+	padding: 1em 2em;
     margin: 1em;
     font-weight: 700;
     text-decoration: none;
+    font-size: larger;
 }
 .btn:hover {
 	background-color:var(--text);
 }
 .web-thumb {
-    width: 100%;
-    height: 550px;
+    max-height: 450px;
 }
 /* Animated symbol settings. */
 .floaters{
@@ -254,6 +262,7 @@ header {
 /* Styles for the gallery */
 .tz-gallery {
     padding: 1em;
+
 }
 .tz-gallery .thumbnail {
     padding: 0;
@@ -302,24 +311,17 @@ header {
     header {
         height: auto;
     }
-    #about-me {
-        margin: 0;
+    .photo {
+    margin: 0;
     }
     #my-work {
         padding: 0em;
     }
-     #badges {
-        margin: 0;
-     }
      .contact {
         margin: 0;
      }
     .floaters {
         display: none;
-    }
-    .photo {
-        position: inherit;
-        margin-bottom: 3em;
     }
     .styled-text {
         font-size: 4em;
