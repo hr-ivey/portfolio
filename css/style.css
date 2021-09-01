@@ -272,6 +272,7 @@ footer {
 .tz-gallery img {
     border-radius: 2px;
     max-width: 100%;
+    max-height: 100%;
     border-color: #223927;
     border-width: 1em;
     border-style: solid;
@@ -313,6 +314,7 @@ footer {
     }
     .photo {
     margin: 0;
+    max-width: 100%;
     }
     #my-work {
         padding: 0em;
