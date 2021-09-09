@@ -67,7 +67,8 @@ header {
 }
 #about-me, #my-work, #contact-me {
     text-align: justify;
-    margin: 0em 0em 5em 0em;
+    padding: 0em 0em 5em 0em;
+    margin: 0;
     }
 #my-work {
     background-color: var(--secondary);
@@ -76,11 +77,10 @@ header {
 }
 footer {
     background-color: #131313;
-    padding-top: 5em;
 }
 #badges {
     text-align: center;
-    color: var(--primary);
+    color: var(--secondary);
     margin: 2em 0em;
   }
 .sticky {
@@ -259,10 +259,6 @@ footer {
     }
 }
 /* Styles for the gallery */
-.tz-gallery {
-    padding: 1em;
-
-}
 .tz-gallery .thumbnail {
     padding: 0;
     margin-bottom: 30px;
@@ -299,9 +295,6 @@ footer {
 }
 /* Mobile-friendly layout changes */
 @media (max-width: 1024px) {
-    p {
-        line-height: 1em;
-    }
     h1 {
         font-size: 3em;
     }
@@ -311,12 +304,12 @@ footer {
     header {
         height: auto;
     }
-    .photo {
-    margin: 0;
-    max-width: 100%;
+    .container {
+        width: 95%;
     }
-    #my-work {
-        padding: 0em;
+    .photo {
+    margin: auto;
+    max-width: 90%;
     }
      .contact {
         margin: 0;
