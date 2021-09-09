@@ -53,6 +53,9 @@ body {
 header {
     height: 30vh;
 }
+footer {
+    background-color: #131313;
+}
 .container {
     max-width: 80%;
 }
@@ -74,9 +77,6 @@ header {
     background-color: var(--secondary);
     width: 100%;
     padding: 2em;
-}
-footer {
-    background-color: #131313;
 }
 #badges {
     text-align: center;
