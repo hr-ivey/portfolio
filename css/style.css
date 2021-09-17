@@ -29,8 +29,8 @@ h2 {
 }
 h3 {
     font-weight:700;
-    font-size: 2em;
-    margin: 1.5em 0em;
+    font-size: 2.5em;
+    margin: 1em 0em;
 }
 p {
     font-size: x-large;
@@ -259,6 +259,9 @@ footer {
     }
 }
 /* Styles for the gallery */
+.tz-gallery {
+    padding: 2em 0em;
+}
 .tz-gallery .thumbnail {
     padding: 0;
     margin-bottom: 30px;
@@ -305,7 +308,7 @@ footer {
         height: auto;
     }
     .container {
-        width: 95%;
+        max-width: 100%;
     }
     .photo {
     margin: auto;
